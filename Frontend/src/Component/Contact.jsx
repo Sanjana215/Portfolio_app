@@ -38,7 +38,7 @@ import {
       console.log("sending message");
 
       try {
-        const response = await fetch("https://portfolio-backend-apx5.onrender.com", {
+        const response = await fetch("https://portfolio-backend-apx5.onrender.com/sendemail", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formdata)

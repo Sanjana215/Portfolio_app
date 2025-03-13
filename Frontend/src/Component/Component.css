@@ -1,0 +1,115 @@
+.text{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.sidebar{
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: -15px;  /* Adjusted to ensure visibility */
+    transform: translateY(-30%);
+    z-index: 10;  /* Ensures button stays on top */
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.opensidebar {
+    cursor: pointer;
+    height: 100%;
+    width: 230px;  /* Ensures button is inside visible area */
+    min-width: 200px;
+    position: relative;
+    transition: max-width 0.3s ease-in-out;
+}
+
+.closesidebar {
+    height: 100%;
+    max-width: 70px;  /* Increased from 6% to ensure visibility */
+    min-width: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: max-width 0.3s ease-in-out;
+}
+
+
+.image {
+    border-radius: 50%;
+    max-height: 170px;
+    max-width: 150px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.vstack{
+    padding-top: 80px;
+}
+.text{
+    display: flex;
+}
+.vstack-close{
+    padding-top: 120px;
+    position: absolute;
+    right: 20px;
+}
+.close-menu{
+    padding-top: 100px;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid white;
+    cursor: pointer;
+  }
+  
+.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid cyan;
+  }
+
+  @media (max-width: 600px)
+  {
+    .sidebar{
+        display: none;
+    }
+  }
+
+  @media (min-width: 600px)
+  {
+    .mobile{
+        display: none;
+    }
+  }
+
+
+  
+
+

@@ -64,7 +64,7 @@ const Mobilenav = () => {
             >
 
             {[
-              { to: "profile", icon: RiProfileLine, color: "blue.300", label: "Profile" },
+              { to: "about", icon: RiProfileLine, color: "blue.300", label: "Profile" },
               { to: "skills", icon: GiSkills, color: "green.300", label: "Skills" },
               { to: "projects", icon: AiOutlineProject, color: "red.300", label: "Projects" },
               { to: "education", icon: MdCastForEducation, color: "orange.300", label: "Education" },
@@ -93,9 +93,9 @@ const Mobilenav = () => {
                     duration={500} 
                     spy={true} 
                     offset={-50}
-                    className="nav-link"
                     style={{ display: "flex", alignItems: "center", gap: "10px", width: "100%" }}
                     onClick={() => handleOptionClick(to)}
+                    padding={'30px'}
                   >
                     <Icon as={icon} boxSize={6} color={color} />
                     <Text>{label}</Text>

@@ -106,13 +106,13 @@ import {
                 <Fieldset.Root padding="20px">
                   <Fieldset.Content>
                     <Field label="Name">
-                      <Input name="name" placeholder="Enter your name" focusBorderColor="blue.400" value={formdata.name} onChange={handlechange} />
+                      <Input name="name" placeholder="Enter your name" value={formdata.name} onChange={handlechange} />
                     </Field>
                     <Field label="Email">
-                      <Input name="email" type="email" placeholder="Enter your email" focusBorderColor="blue.400" value={formdata.email} onChange={handlechange} />
+                      <Input name="email" type="email" placeholder="Enter your email" value={formdata.email} onChange={handlechange} />
                     </Field>
                     <Field label="Message">
-                      <Textarea name="message" placeholder="Type your message..." focusBorderColor="blue.400" value={formdata.message} onChange={handlechange} />
+                      <Textarea name="message" placeholder="Type your message..."  value={formdata.message} onChange={handlechange} />
                     </Field>
                     <Button mt="4" w="full" bgGradient="linear(to-r, #138781, #1EA896)" color="white" fontSize="lg" fontWeight="bold" py="6" borderRadius="md" _hover={{ bgGradient: "linear(to-r, #1EA896, #138781)", transform: "scale(1.05)" }} transition="0.2s ease-in-out" type="submit">
                       Send Message

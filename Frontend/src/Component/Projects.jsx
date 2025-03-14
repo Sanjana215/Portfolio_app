@@ -1,46 +1,40 @@
-import React from 'react'
+import React from 'react';
 import { Box, Heading, Button, Card, Image, Text, SimpleGrid } from "@chakra-ui/react";
 import projects from "../utils/projects.js";
-import {Zoom } from "react-awesome-reveal";
-
+import { Zoom } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
     <Box marginTop={'30px'} id="projects">
-      
       {/* Zoom in Heading */}
-    
-       <Heading 
-               paddingTop={'10px'} 
-               size={{ base: '3xl', md: '4xl' }} 
-               textAlign={'center'} 
-               color={'#138781'} 
-               boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}
-               paddingLeft={{md:'160px'}}
-             >
-               Recent Projects
-             </Heading>
-      
+      <Heading 
+        paddingTop={'10px'} 
+        size={{ base: '3xl', md: '4xl' }} 
+        textAlign={'center'} 
+        color={'#138781'} 
+        boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}
+        paddingLeft={{ md: '160px' }}
+      >
+        Recent Projects
+      </Heading>
 
       {/* Description */}
-      <Text textAlign={'center'} fontSize="lg" color="gray.800" paddingTop={'30px'} paddingLeft={{md:'160px'}}>
+      <Text textAlign={'center'} fontSize="lg" color="gray.800" paddingTop={'30px'} paddingLeft={{ md: '160px' }}>
         👇 Here are some of my projects.
       </Text>
 
-      {/* Fade-up effect for project cards (same as skills section) */}
+      {/* Fade-up effect for project cards */}
       <SimpleGrid 
         columns={{ base: 1, sm: 2, md: 3 }} 
         spacing="5px" 
         marginLeft={{ base: "20px", md: "300px" }}
         marginBottom={'30px'}
-        marginTop={{base:'20px',md:'50px'}}
-        rowGap={{base:'10px', md:'30px'}}
+        marginTop={{ base: '20px', md: '50px' }}
+        rowGap={{ base: '10px', md: '30px' }}
       >
-        
-          {projects.map((project) => (
-            <Zoom damping={0.5}>
+        {projects.map((project, index) => (  // Added index
+          <Zoom key={`project-${index}`} damping={0.5}>  {/* Unique dynamic key */}
             <Card.Root
-              key={project.id}
               w={{ base: "300px", md: "300px" }}
               margin={{ base: "10px", md: "0px" }}
               h={{ base: "auto", md: "350px" }}
@@ -108,12 +102,11 @@ const Projects = () => {
                 </Button>
               </Card.Footer>
             </Card.Root>
-            </Zoom>
-          ))}
-        
+          </Zoom>
+        ))}
       </SimpleGrid>
     </Box>
   );
 }
 
-export default Projects;  
+export default Projects;

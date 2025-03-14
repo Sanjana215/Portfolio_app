@@ -84,16 +84,26 @@
     width: 100%;
   }
   
-  .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-left: 5px solid white;
-    cursor: pointer;
-  }
-  
-.active {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-left: 5px solid cyan;
-  }
+  .active {
+    background: linear-gradient(90deg, rgba(0, 180, 255, 0.3), rgba(0, 100, 255, 0.1)); /* Cyan-blue gradient */
+    border-left: 4px solid #00E5FF; /* Neon cyan border */
+    color: #00E5FF; /* Neon cyan text color */
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 229, 255, 0.8); /* Glowing text effect */
+    box-shadow: 2px 2px 12px rgba(0, 180, 255, 0.4); /* Soft glowing shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    background: linear-gradient(90deg, rgba(0, 140, 255, 0.3), rgba(0, 80, 255, 0.2)); /* Darker blue hover effect */
+    border-left: 4px solid #007BFF; /* Deep blue hover border */
+    color: #00BFFF; /* Lighter blue text on hover */
+    box-shadow: 2px 2px 10px rgba(0, 140, 255, 0.5); /* Subtle glow effect */
+    transition: all 0.3s ease-in-out;
+}
+
+
 
   @media (max-width: 600px)
   {
@@ -111,5 +121,3 @@
 
 
   
-
-

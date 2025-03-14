@@ -5,9 +5,9 @@ import { Bounce} from "react-awesome-reveal";
 
 const About = () => {
   return (
-    <Bounce damping={'0.5'}>
+    
     <Box 
-      id={'profile'} 
+      id="about"
       marginX={{base:"auto", md:'180px', lg:'280px'}} // Adjusted for ThinkPad
       marginTop={'40px'} 
       padding={'2px'} 
@@ -17,6 +17,7 @@ const About = () => {
       width={{ base: '90%', md: '85%', lg: '75%' }} // Adjusted width for ThinkPad
       paddingX={{ base: '10px', md: '30px' }} 
     >
+      <Bounce damping={'0.5'} >
       <Stack 
         direction={{ base: 'column', md: 'row' }} 
         marginTop={'10px'}
@@ -24,6 +25,7 @@ const About = () => {
         spacing={{ base: '20px', md: '20px', lg: '30px' }}
         paddingBottom={{base:'0px',md:'20px', lg:'30px'}}
         paddingTop={{base:'0px',md:'10px'}}
+       
       >
         <Image 
           src='images/about.webp' 
@@ -71,8 +73,9 @@ const About = () => {
           </Text>
         </VStack>
       </Stack>
+      </Bounce>
     </Box>
-    </Bounce>
+   
   );
 };
 

@@ -49,7 +49,7 @@ const Profile = () => {
       <Box marginTop={'50px'} position="relative" paddingLeft={{base:'0px',md:'100px'}}>
        
           <Flex 
-            gap={6} 
+            gap={10} 
             flexDirection={{ base: 'column', md: 'row' }}
             alignItems="center"
           >
@@ -59,6 +59,7 @@ const Profile = () => {
                 color="white"
                 width="150px"
                 fontSize="large"
+               
                 _hover={{ bg: "blue.600", transform: "scale(1.05)" }}
               >
                 Hire Me

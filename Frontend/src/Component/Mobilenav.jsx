@@ -73,7 +73,7 @@ const Mobilenav = () => {
             ].map(({ to, icon, color, label }, index) => (
               <HStack 
                 key={index} 
-                padding="8px" 
+                padding="15px" 
                 borderRadius="5px" 
                 _hover={{ 
                   background: "#fcba29", 
@@ -95,7 +95,7 @@ const Mobilenav = () => {
                     offset={-50}
                     style={{ display: "flex", alignItems: "center", gap: "10px", width: "100%" }}
                     onClick={() => handleOptionClick(to)}
-                    padding={'30px'}
+                    padding={'100px'}
                   >
                     <Icon as={icon} boxSize={6} color={color} />
                     <Text>{label}</Text>

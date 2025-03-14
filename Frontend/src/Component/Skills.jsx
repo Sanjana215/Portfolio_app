@@ -12,7 +12,7 @@ const Skills = () => {
       
       {/* Faster Zoom for Title */}
       
-        <Heading size={{base:'3xl',md:'4xl'}} textAlign={'center'} color={'#138781'} boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}>
+        <Heading size={{base:'3xl',md:'4xl'}} textAlign={'center'} color={'#138781'} boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'} paddingLeft={{md:'160px'}}>
           Technical Skills
         </Heading>
       

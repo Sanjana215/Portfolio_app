@@ -27,12 +27,12 @@ const Experience = () => {
 
       <VStack align="start" spacing={3}>
         <Icon as={MdWork} boxSize={8} color="#138781" />
-        <Heading size="md">Customer Success Intern</Heading>
+        <Heading size="md">Incident Management Intern</Heading>
         <Text fontSize="sm" color="gray.500">
           Capillary Technology | Jan 2025 - Present
         </Text>
         <Text fontSize="md">
-          Assisting customers in resolving technical issues, improving customer engagement, and ensuring seamless onboarding.
+        Worked with monitoring tools like JIRA, ServiceNow, Postman, and AWS to track, analyze, and resolve system issues efficiently.
         </Text>
       </VStack>
     </Box>

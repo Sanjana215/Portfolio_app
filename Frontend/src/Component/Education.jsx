@@ -36,7 +36,7 @@ const Education = () => {
             maxWidth: '370px',  
             borderRadius: '10px',
           }}
-          date="2021-2025"
+          date=" 2021-2025"
           dateClassName="custom-date"
           iconStyle={{ background: '#138781', color: 'black' }}
           icon={<MdSchool />}
@@ -54,7 +54,7 @@ const Education = () => {
             maxWidth: '370px',
             borderRadius: '10px',
           }}
-          date="2019-2021"
+          date=" 2019-2021"
           dateClassName="custom-date"
           iconStyle={{ background: '#138781', color: 'black' }}
           icon={<MdSchool />}
@@ -72,7 +72,7 @@ const Education = () => {
             maxWidth: '370px',
             borderRadius: '10px',
           }}
-          date="2007-2019"
+          date=" 2016-2018"
           dateClassName="custom-date"
           iconStyle={{ background: '#138781', color: 'black' }}
           icon={<MdSchool />}

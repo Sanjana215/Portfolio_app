@@ -93,7 +93,7 @@ import {
                   <CiLinkedin size="70%" />
                 </IconButton>
   
-                <IconButton as="a" href="https://www.instagram.com/sanjana.simha?utm_source=qr&igsh=MTFrb3phb2J4aGxxNg==" target="_blank" rel="noopener noreferrer" color="pink.500" bg="white" borderRadius="full" boxSize="50px" border="2px solid" borderColor="pink.500" _hover={{ transform: "scale(1.2)", bg: "pink.100" }} transition="0.2s ease-in-out">
+                <IconButton as="a" href="https://www.instagram.com/_sanjana.simha_?utm_source=qr&igsh=MTFrb3phb2J4aGxxNg==" target="_blank" rel="noopener noreferrer" color="pink.500" bg="white" borderRadius="full" boxSize="50px" border="2px solid" borderColor="pink.500" _hover={{ transform: "scale(1.2)", bg: "pink.100" }} transition="0.2s ease-in-out">
                   <FaInstagram size="70%" />
                 </IconButton>
   

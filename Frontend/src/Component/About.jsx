@@ -52,7 +52,7 @@ const About = () => {
 
           <Text 
             as="span"
-            fontSize={{ base: "md", md: "lg" }} 
+            fontSize={{ base: "md", md: "md", lg:"lg" }} 
             color="gray.800" 
             fontFamily="sans-serif"
             lineHeight="1.8"
@@ -61,7 +61,7 @@ const About = () => {
             paddingLeft={{ base: '0px', md: '10px', lg: '20px' }}
             textAlign={'justify'}
           >
-            I am a passionate <Text as="span" color="#FACC15" fontWeight="bold">Software Developer</Text> 
+            I am a passionate <Text as="span" color="#FACC15" fontWeight="bold">Software Developer </Text> 
             with experience in <Text as="span" color="#FACC15" fontWeight="bold">MERN Stack</Text>. 
             I love solving problems and building efficient, scalable applications. Beyond coding, I enjoy 
             <Text as="span" color="#FACC15" fontWeight="bold"> exploring new technologies, problem-solving, 

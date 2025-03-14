@@ -10,13 +10,20 @@ const Projects = () => {
       
       {/* Zoom in Heading */}
     
-        <Heading size={{base:'3xl',md:'4xl'}} textAlign={'center'} color={'#138781'} boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}>
-          Recent Projects
-        </Heading>
+       <Heading 
+               paddingTop={'10px'} 
+               size={{ base: '3xl', md: '4xl' }} 
+               textAlign={'center'} 
+               color={'#138781'} 
+               boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}
+               paddingLeft={{md:'160px'}}
+             >
+               Recent Projects
+             </Heading>
       
 
       {/* Description */}
-      <Text textAlign={'center'} fontSize="lg" color="gray.800" paddingTop={'30px'}>
+      <Text textAlign={'center'} fontSize="lg" color="gray.800" paddingTop={'30px'} paddingLeft={{md:'160px'}}>
         👇 Here are some of my projects.
       </Text>
 

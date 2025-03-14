@@ -28,14 +28,15 @@ const Sidebar = () => {
           {isopen ? <SlArrowLeft /> : <SlArrowRight />}
         </Button>
         
-        <VStack className='vstack'>
+        <VStack paddingTop={'50px'} cursor={'pointer'}>
+
           {isopen && (
                 
                 <Zoom>
 
                 
             
-               <Box className='image' >
+               <Box className='image' marginTop="0px" padding="0">
               <Image src="images/sanjanaPhoto.jpg" />
             </Box>
             </Zoom>
@@ -45,42 +46,42 @@ const Sidebar = () => {
 
           <Box className={!isopen && 'close-menu'}>
           <Slide triggerOnce>
-            <HStack padding={2}>
+            <HStack padding={{md:1,lg:2}}>
               <Link to="profile" smooth={true} duration={500} activeClass="active" className="nav-link" spy="true"  >
                 <Icon as={RiProfileLine} boxSize={7} color={"blue.400"} title={'profile'} />
                 {isopen && <span>Profile</span>}
               </Link>
             </HStack>
 
-            <HStack padding={2}>
+            <HStack padding={{md:1,lg:2}}>
               <Link to="skills" smooth={true} duration={500} activeClass="active" className="nav-link" spy="true"  >
                 <Icon as={GiSkills} boxSize={6} color="green.400" title={'skills'} />
                 {isopen && <span>Skills</span>}
               </Link>
             </HStack>
 
-            <HStack padding={2}>
+            <HStack padding={{md:1,lg:2}}>
               <Link to="projects" smooth={true} duration={500} activeClass="active" className="nav-link" spy="true"  >
                 <Icon as={AiOutlineProject} boxSize={6} color="red.400" title={'projects'} />
                 {isopen && <span>Projects</span>}
               </Link>
             </HStack>
 
-            <HStack padding={2}>
+            <HStack padding={{md:1,lg:2}}>
               <Link to="education" smooth={true} duration={500} activeClass="active" className="nav-link" spy="true"  >
                 <Icon as={MdCastForEducation} boxSize={6} color="orange.200" title={'education'} />
                 {isopen && <span>Education</span>}
               </Link>
             </HStack>
 
-            <HStack padding={2} >
+            <HStack padding={{md:1,lg:2}} >
               <Link to="experience" smooth={true} duration={500} activeClass="active" className="nav-link" spy="true"  >
                 <Icon as={MdOutlineWorkOutline} boxSize={6} color="purple.400" title={'experience'} />
                 {isopen && <span>Experience</span>}
               </Link>
             </HStack>
 
-            <HStack padding={2}>
+            <HStack padding={{md:1,lg:2}} cursor={'pointer'}>
               <Link to="contact" smooth={true} duration={500} activeClass="active" className="nav-link" spy="true" offset={-20} >
                 <Icon as={BiSolidContact} boxSize={6} color="orange.400" title={'contact'} />
                 {isopen && <span>Contact</span>}

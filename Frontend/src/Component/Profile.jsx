@@ -16,7 +16,7 @@ const Profile = () => {
       alignItems="center"
     >
       
-        <VStack spacing={4} textAlign="center">
+        <VStack spacing={4} textAlign="center" paddingLeft={'100px'}>
           <Heading size={'3xl'} fontFamily={'monospace'} color={'aliceblue'}>
             Hi👋, I'm a
           </Heading>
@@ -46,7 +46,7 @@ const Profile = () => {
       
 
       {/* Keep buttons fixed */}
-      <Box marginTop={'50px'} position="relative">
+      <Box marginTop={'50px'} position="relative" paddingLeft={'100px'}>
        
           <Flex 
             gap={4} 

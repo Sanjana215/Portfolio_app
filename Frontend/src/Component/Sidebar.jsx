@@ -21,7 +21,7 @@ const Sidebar = () => {
       background="linear-gradient(135deg, #0F172A, #1E293B)"
       color="white"
       paddingY={5}
-      width="260px" 
+      width={{base:"150px", lg:'260px'}} 
       flexDirection="column"
       alignItems="center"
       boxShadow="lg"
